@@ -19,7 +19,7 @@ private httpOptions = {
 };
   constructor(private http: HttpClient) {}
 
-    public getList(): Observable<any>{
+    public getList(): Observable<any> {
       return this.http.get<any>(this.endpoint, this.httpOptions);
    }
 }
